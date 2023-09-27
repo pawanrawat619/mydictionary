@@ -14,7 +14,7 @@ function App() {
   }
 
   const getWordData = async (myword) => {
-    console.log("api called");
+   
     const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${myword}`;
 
     const respone = await fetch(url);
