@@ -1,12 +1,12 @@
 function MainComponent({ wordData }) {
   const word = wordData[0].word;
-  console.log(word);
+ 
 
   const meaning = wordData[0].meanings[0].definitions[0].definition;
 
   const phonetic = wordData[0].phonetic;
 
-  // const wordAudio = wordData[0].phonetics[0].audio;
+
 
   const mysynonyms = wordData[0].meanings.filter(function (myDesiredArray) {
     return (
@@ -15,7 +15,7 @@ function MainComponent({ wordData }) {
   });
 
   const finalSynonyms = mysynonyms[0].synonyms.slice(0, 4).join(",");
-  console.log(finalSynonyms);
+
 
   const myantonyms = wordData[0].meanings.filter(function (myDesiredArray) {
     return (
